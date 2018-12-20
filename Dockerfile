@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:11.1.0-alpine
 
 WORKDIR /usr/src/app
 # COPY package*.json ./
@@ -14,11 +14,11 @@ RUN git clone https://github.com/marmelab/react-admin.git
 # RUN npm install elastic-apm-node
 
 EXPOSE 3000
-#CMD [ "cd", "test-admin/" ]
-#CMD [ "yarn", "add", "react-admin", "ra-data-json-server", "prop-types" ]
-#CMD [ "yarn", "start" ]
+CMD [ "cd", "test-admin/" ]
+CMD [ "yarn", "add", "react-admin", "ra-data-json-server", "prop-types" ]
+CMD [ "yarn", "start" ]
 
-CMD [ "cd", "react-admin/" ]
-CMD [ "make", "install" ]
-CMD [ "make", "run-tutorial" ]
+#CMD [ "cd", "react-admin/" ]
+#CMD [ "make", "install" ]
+#CMD [ "make", "run-tutorial" ]
 CMD [ "bash" ]
