@@ -10,3 +10,7 @@ Baixa o Dockerfile e depois construir a imagem:
 > docker build -t docker-react-admin .
 
 > docker run --name docker-react-admin -it -p 3000:3000 -d docker-react-admin
+
+ou para rodar na mesma rede do strapi:
+
+> docker run --name docker-react-admin -it -p 3000:3000 --network strapi-docker_default -d docker-react-admin
