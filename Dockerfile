@@ -14,5 +14,8 @@ RUN git clone https://github.com/marmelab/react-admin.git
 # RUN npm install elastic-apm-node
 
 EXPOSE 3000
-CMD [ "cd", "test-admin/" ]
-CMD [ "yarn", "start" ]
+#CMD [ "cd", "test-admin/" ]
+#CMD [ "yarn", "start" ]
+
+CMD [ "cd", "react-admin/" ]
+CMD [ "make", "run-tutorial" ]
