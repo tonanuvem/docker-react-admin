@@ -1,7 +1,7 @@
 FROM node:8
 
 WORKDIR /usr/src/app
-COPY package*.json ./
+# COPY package*.json ./
 
 RUN mkdir -p /app
 RUN npm install -g create-react-app
