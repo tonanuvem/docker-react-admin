@@ -15,4 +15,4 @@ RUN git clone https://github.com/marmelab/react-admin.git
 
 EXPOSE 3000
 CMD [ "cd", "test-admin/" ]
-CMD [ "make", "start" ]
+CMD [ "yarn", "start" ]
