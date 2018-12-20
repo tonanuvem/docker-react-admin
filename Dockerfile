@@ -8,6 +8,8 @@ RUN npm install -g create-react-app
 #RUN create-react-app test-admin
 #RUN cd test-admin/
 #RUN yarn add react-admin ra-data-json-server prop-types
+RUN apk update && apk upgrade && \
+    apk add --no-cache bash git openssh
 RUN git clone https://github.com/marmelab/react-admin.git
 
 # RUN npm install express
