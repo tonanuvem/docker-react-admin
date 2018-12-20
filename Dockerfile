@@ -19,4 +19,6 @@ EXPOSE 3000
 #CMD [ "yarn", "start" ]
 
 CMD [ "cd", "react-admin/" ]
+CMD [ "make", "install" ]
 CMD [ "make", "run-tutorial" ]
+CMD [ "bash" ]
