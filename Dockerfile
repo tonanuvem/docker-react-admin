@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 
 RUN mkdir -p /app
 RUN npm install -g create-react-app
-RUn npm install ra-data-simple-rest
+RUN npm install ra-data-simple-rest
 #RUN create-react-app test-admin
 #RUN cd test-admin/
 #RUN yarn add react-admin ra-data-json-server prop-types
