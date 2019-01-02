@@ -9,7 +9,7 @@ import simpleRestProvider from 'ra-data-simple-rest';
 
 const App = () => (
     //<Admin dataProvider={dataProvider}>
-    <Admin authProvider={authProviderStrapi} dataProvider={simpleRestProvider('http://docker.tonanuvem.net:1773/')}>
+    <Admin authProvider={authProviderStrapi} dataProvider={simpleRestProvider('http://docker.tonanuvem.net:1337/')}>
         //<Resource name="users" list={ListGuesser} />
         //<Resource name="posts" list={ListGuesser} />
         <Resource name="conteudos" list={ListGuesser} />
